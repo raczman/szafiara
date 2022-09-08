@@ -1,5 +1,4 @@
 from weakref import ref
-from itsdangerous import json
 from flask import Flask, render_template, jsonify
 from models import Item
 from scrapers import *
@@ -11,7 +10,8 @@ CONFIG = {
         'https://www.breuninger.com/pl/marki/stone-island/?sale=sale',
         'https://www.breuninger.com/pl/marki/stone-island-shadow-project/+meskie/?sale=sale',
         'https://www.breuninger.com/pl/marki/barbour/+meskie/?sale=sale',
-        'https://www.breuninger.com/pl/marki/fred-perry/+meskie/?sale=sale'
+        'https://www.breuninger.com/pl/marki/fred-perry/+meskie/?sale=sale',
+        'https://www.breuninger.com/pl/marki/a-cold-wall/+meskie/?sale=sale'
     ],
     'showroom': [
         'https://www.showroom.pl/meska/stone-island/sale',

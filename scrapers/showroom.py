@@ -14,7 +14,7 @@ def showroom(url: str) -> list[Item]:
             ret.append(showroomItem(i))
         except Exception as e:
             print('Error while parsing item!')
-            print(e.with_traceback())
+            print(e)
             print(i)
             print('-----------------')
             continue
